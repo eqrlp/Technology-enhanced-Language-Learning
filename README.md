@@ -8,7 +8,7 @@
 
 ## Features
 
-- Convert input text into Australian slang (Beginner / Intermediate / Advanced)
+- Convert input text into Australian slang (Mild / Moderate / Strong)
 - Listen to both original and slang versions with speech synthesis
 - Supports Australian and American English accents
 - Displays a session-based history of conversions
