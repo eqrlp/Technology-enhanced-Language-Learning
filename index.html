@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oz English Buddy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== Welcome Splash ===== -->
+  <div id="welcomeOverlay" class="welcome-overlay">
+    <div class="welcome-text">G'day mate! 🇦🇺</div>
+  </div>
+
+  <!-- ===== Main Card ===== -->
+  <div class="container">
+    <h1>Oz English Buddy 🇦🇺</h1>
+
+    <!-- User Input -->
+    <label for="inputText">Type your English sentence:</label>
+    <textarea id="inputText" placeholder="e.g. I'm going to have breakfast on the beach."></textarea>
+
+    <!-- Reading Speed -->
+    <label for="rateRange">Reading speed: <span id="rateValue">1.0</span>x</label>
+    <input type="range" id="rateRange" min="0.5" max="2" step="0.1" value="1.0" />
+
+    <!-- Slang Intensity -->
+    <label for="slangLevel">Slang Level:</label>
+    <select id="slangLevel">
+      <option value="Mild">🟢 Mild</option>
+      <option value="Moderate">🟡 Moderate</option>
+      <option value="Strong">🔴 Strong</option>
+    </select>
+
+    <!-- Convert Button -->
+    <button id="convertBtn">Give it an Aussie spin</button>
+
+    <!-- ===== Output Area ===== -->
+    <div class="output" id="outputArea" style="display:none;">
+      <div class="label">Original:</div>
+      <div id="originalOutput"></div>
+      <button id="readOriginalBtn" class="speak-btn" aria-label="Play original text">🔊 Listen (Original)</button>
+      <button id="readAmericanBtn" class="speak-btn" aria-label="Play in American accent">🔊 Listen (US Accent)</button>
+
+      <div class="label">With Aussie Slang:</div>
+      <div id="slangOutput"></div>
+      <button id="readSlangBtn" class="speak-btn" aria-label="Play slang text">🔊 Listen (Slang)</button>
+
+      <!-- Optional: American accent button under original text -->
+      
+    </div>
+
+    <!-- ===== History ===== -->
+    <div class="history">
+      <h2>History</h2>
+      <div id="historyList"></div>
+    </div>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
